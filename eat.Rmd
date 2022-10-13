@@ -45,5 +45,12 @@ Because we are only working with categorical variables, we shall use the cat_cat
 barchartGC(~race + eatout, data=mydata, type="percent")
 ```
 
-Here we can see that over 80% of white people who answered this question had eaten out within a week before responding, followed by other people aat just under 80%, and finally by black people at around 75%.
+Here we can see that over 80% of white people who answered this question had eaten out within a week before responding, followed by other people aat just under 80%, and finally by black people at around 70%.
 
+### Numerical Results
+```{r}
+table1 <- xtabs(~race + eatout, data=mydata)
+rowPerc(table1)
+```
+
+These results are similar to our graphical results, but more precise. The group with the largest percentage who has eaten out at most a week prior to answering the survey is white people at 82.82%, followed by other people at 77.78%, and finally by black people at 68.75%.
