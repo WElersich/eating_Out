@@ -54,3 +54,10 @@ rowPerc(table1)
 ```
 
 These results are similar to our graphical results, but more precise. The group with the largest percentage who has eaten out at most a week prior to answering the survey is white people at 82.82%, followed by other people at 77.78%, and finally by black people at 68.75%.
+
+### Inferential Results
+```{r}
+fisherXY(mydata$race,mydata$eatout, printAll = TRUE)
+```
+From these results we can reject the null hypothesis is false for white and black people, because the p-value is very small. However, for white and other, and black and other, the p-values are too high to reject the null hypothesis.
+
