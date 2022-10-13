@@ -35,7 +35,8 @@ mydata <- select(GSS,race,age,eatout)
 mydata <- na.omit(mydata)
 ```
 
-
+### Methods
+Because we are only working with categorical variables, we shall use the cat_cat helper file. For graphical results, the barplot shall be used. For numerical results, we shall create a table. Finally, because one of the categorical variables has three categories (white, black, and other) we will use the fisherXY test to determine significance. We do not need to change character variables to factor variables, because the variables we are working with are already factor variables.
 
 
 
